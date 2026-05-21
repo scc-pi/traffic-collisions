@@ -21,14 +21,27 @@ jobs:
 
       - name: Create labels
         uses: actions/github-script@v7
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         with:
           script: |
-            const yaml = require('js-yaml');
-            const fs = require('fs');
+            const labels = [
+              { name: "Type: epic", color: "3E8EDB", description: "Epic - Large feature or initiative" },
+              { name: "Type: feature", color: "0366D6", description: "Feature - New functionality" },
+              { name: "Type: task", color: "6F42C1", description: "Task - Work item or subtask" },
+              { name: "Type: spike", color: "5319E7", description: "Spike - Research or investigation" },
+              { name: "Theme: data", color: "D4AF37", description: "Data - Data-related work" },
+              { name: "Theme: modelling", color: "F0883E", description: "Modelling - Data modelling or statistical modelling" },
+              { name: "Theme: visualisation", color: "E94B3C", description: "Visualisation - Data visualisation or UI" },
+              { name: "Theme: governance", color: "A4373A", description: "Governance - Data governance or processes" },
+              { name: "Theme: stakeholders", color: "8B6F47", description: "Stakeholders - Stakeholder engagement" },
+              { name: "Theme: delivery", color: "6B4423", description: "Delivery - Project delivery and release" },
+              { name: "Priority: high", color: "B60205", description: "Priority: high - Critical" },
+              { name: "Priority: medium", color: "F9D0C4", description: "Priority: medium - Important" },
+              { name: "Priority: low", color: "CCCCCC", description: "Priority: low - Nice to have" }
+            ];
             
-            const labelsConfig = yaml.load(fs.readFileSync('.github/labels.yml', 'utf8'));
-            
-            for (const label of labelsConfig.labels) {
+            for (const label of labels) {
               try {
                 await github.rest.issues.createLabel({
                   owner: context.repo.owner,
