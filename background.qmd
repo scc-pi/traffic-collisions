@@ -1,0 +1,86 @@
+---
+title: "Background"
+author: "Laurie Platt"
+date: last-modified
+date-format: "[Last updated ] DD MMMM, YYYY"
+format:
+  html:
+    code-tools: true
+    self-contained: false
+    code-fold: true
+    toc: true
+    toc-location: left
+    toc-depth: 5
+    toc-expand: 2
+    number-sections: true
+    fig-cap-location: top
+    code-links:
+      - text: scc-pi/traffic-collisions
+        icon: github
+        href: https://github.com/scc-pi/traffic-collisions
+execute:
+  warning: false
+  message: false
+---
+
+## People  
+
+```{mermaid}
+%%| label: gap-analysis
+%%| fig-cap: "Figure: People & Services"
+%%| echo: true
+%%| code-fold: hide
+
+flowchart TD
+
+    Data1["James Ford<br/>Chief Data Officer"]
+    Data2["Nicola Mchugh<br/>Corporate Performance & Insight Manager"]
+    Data3["Laurie Platt<br/>Data Scientist"] 
+    RS1["Tracy Hendry<br/>Road Safety Manager"]
+    RS2["Ashley Carnall<br/>Road Safety Auditor"]
+    RS3["Ian Woodhouse<br/>Transport Planner"]
+    Programme1["Richard Whiteley"]
+    
+    Data1 --> Data2 --> Data3
+```
+
+## Decision Process
+
+### AS-IS (spots) 
+
+```{mermaid}
+%%| label: gap-analysis
+%%| fig-cap: "Figure: AS-IS (spots) Decision Process"
+%%| echo: true
+%%| code-fold: hide
+
+flowchart TD
+
+    Analysis1["STATS19<br/><b>hot-spot</b> analysis<br/>(<i>Officer</i>)"]
+    Analysis2["Investigation of individual<br/><b>spots & lengths</b><br/>(<i>Officer</i>)"]
+    Analysis3["Local Safety schemes<br/><b>criteria</b><br/>(<i>Members</i>)"] 
+    List1["Local Safety schemes<br/><b>draft priority list</b><br/>(<i>Officer</i>)"]
+    List2["Local Safety schemes<br/><b>recommended priority list</b><br/>(<i>Manager</i>)"]
+    List3["Local Safety schemes<br/><b>agreed priority list</b><br/>(<i>Members</i>)"]
+    Programme1["Local Safety schemes<br/><b>programme</b><br/>(<i>Officer</i>)"]
+    
+    Analysis1 --> List1
+    Analysis2 --> List1
+    Analysis3 --> List1
+    List1 --> List2 --> List3 --> Programme1
+```
+
+### EMERGING-AS-IS (lengths)  
+
+
+### TO-BE (lengths) 
+
+## Data Analysis Process
+
+### AS-IS (lengths)  
+
+
+### TO-BE (lengths) 
+
+
+

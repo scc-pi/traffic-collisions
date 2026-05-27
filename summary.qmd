@@ -92,3 +92,5 @@ Next Steps:
 
 - Further research on best practice (e.g. TfL) and planning (as part of current Multiverse coursework).  
 - Meeting with Tracy, Ash, & Nicola – sponsorship, proposal sign off, ways of working etc.  
+
+Detailed [project plan](https://github.com/orgs/scc-pi/projects/7/views/1).
