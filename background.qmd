@@ -25,24 +25,65 @@ execute:
 
 ## People  
 
+Laurie Platt, Data Scientist, is in the final year of an [Advanced Data Fellowship Multiverse course](https://www.multiverse.io/employers/programmes/advanced-data-fellowship). For his current [Business Transformation Proposal module](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc) (deadline 10/06/26) he's proposing a Traffic Collision Risk Model that could be undertaken for his Capstone Project (deadline Feb '27).  
+
+Nicola Mchugh, the Performance & Insight Manager, is Laurie's line manager and has been involved in early discussions about the project.   
+
+Tracy Hendry, the Road Safety Manager, has confirmed her interest in the project. Tracy wrote the current [Road Safety Action Plan 2024-29](https://sccextranet.sharepoint.com/:b:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Background/SCC%20Road%20Safety%20Action%20Plan%202024%20-%202029.pdf?csf=1&web=1&e=tz4ZeN).  
+
+Ian Woodhouse, Principal Transport Planner, is writing the [emerging Road Safety Strategy](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Background/260323_Road%20Safety%20Strategy_V10.docx?d=we5c48ad9520d4953b354c53ef6700de9&csf=1&web=1&e=jiniSw) due autumn 2026.      
+
+Ashley Carnall, Road Safety Auditor, is analysing data to identify the most dangerous roads that require an engineering scheme to improve them.  
+
+Richard Whitely, the Transport Programmes Manager, is responsible for overseeing the [Road Safety Fund Programme](https://democracy.sheffield.gov.uk/mgIssueHistoryHome.aspx?IId=48150&optionId=0). This includes working with Members of the [Transport, Regeneration and Climate Policy Committee](https://democracy.sheffield.gov.uk/mgCommitteeDetails.aspx?ID=645) to agree which schemes are included in the programme.
+
+Ben King, the Strategic Transport Manager, is Tracy and Ian's line manager, and maintains Project Mandates for each Road Safety scheme.   
+
+People mentioned are highlighted in the diagram below, which illustrates where they sit in the Council structure.  
+
 ```{mermaid}
-%%| label: gap-analysis
+%%| label: people
 %%| fig-cap: "Figure: People & Services"
 %%| echo: true
 %%| code-fold: hide
 
 flowchart TD
 
-    Data1["James Ford<br/>Chief Data Officer"]
-    Data2["Nicola Mchugh<br/>Corporate Performance & Insight Manager"]
-    Data3["Laurie Platt<br/>Data Scientist"] 
-    RS1["Tracy Hendry<br/>Road Safety Manager"]
-    RS2["Ashley Carnall<br/>Road Safety Auditor"]
-    RS3["Ian Woodhouse<br/>Transport Planner"]
-    Programme1["Richard Whiteley"]
+    Top1[Kate Josephs - Chief Exec]
+    Top2[Kate Martin<br/>City Futures - Exec Director]
+    Top3[Parveen Akhtar<br/>Chief Operating Officer]
     
-    Data1 --> Data2 --> Data3
+    Transport1["William Stewart<br/>Investment, Climate Change, & Planning - Director"]
+    Transport2["Jefferson Nwokeoma<br/>Transport - Assistant Director"]
+
+    Safety1["Ben King<br/>Strategic Transport - Manager"]:::yellow
+    Safety2["Tracy Hendry<br/>Road Safety - Manager"]:::yellow 
+    Safety3["Ian Woodhouse<br/>Transport Planner"]:::yellow 
+    Projects1["Andrew Butler<br/>Transport Projects - Manager"]
+    Projects2["Ashley Carnall<br/>Road Safety Auditor"]:::yellow 
+    Programmes1["Richard Whiteley<br/>Transport Programmes - Manager"]:::yellow 
+
+    Data1["Jonathon Clifton<br/>Strategy, Performance, & Communications - Director"]
+    Data2["James Ford<br/>Chief Data Officer"]
+    Data3["Nicola Mchugh<br/>Corporate Performance & Insight - Manager"]:::yellow
+    Data4["Laurie Platt<br/>Data Scientist"]:::yellow 
+    
+    Top1 --> Top2
+    Top1 --> Top3
+
+    Top2 --> Transport1 --> Transport2
+    Transport2 --> Safety1
+    Safety1 --> Safety2
+    Safety1 --> Safety3
+    Transport2 --> Projects1 --> Projects2
+    Transport2 --> Programmes1
+    
+    Top3 --> Data1 --> Data2 --> Data3 --> Data4
+
+    classDef yellow fill:#FFF2CC
 ```
+
+## Scope  
 
 ## Decision Process
 
