@@ -85,6 +85,14 @@ flowchart TD
 
 ## Scope  
 
+The Collision Risk Model project is initially a PoC (Proof of Concept) only. There is an existing process for prioritising interventions, and the PoC will be tested in parallel with this.    
+
+The [emerging Road Safety Strategy](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Background/260323_Road%20Safety%20Strategy_V10.docx?d=we5c48ad9520d4953b354c53ef6700de9&csf=1&web=1&e=jiniSw) provides the summary below of Road Safety interventions and policies.  
+
+![Summary of Interventions & Policies](resources/road-safety-interventions.png){#fig-interventions .lightbox}
+
+The scope of the PoC Collision Risk Model is SR-01 Highway Design only i.e. local Road Safety engineering schemes. It is arguable that a Collision Risk Model could inform, to a great or lesser extent, all of the listed interventions, and this is something that could be reviewed after the PoC.  
+
 ## Decision Process
 
 ### AS-IS (spots) 
