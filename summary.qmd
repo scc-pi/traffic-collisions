@@ -1,0 +1,94 @@
+---
+title: "Summary"
+author: "Laurie Platt"
+date: last-modified
+date-format: "[Last updated ] DD MMMM, YYYY"
+format:
+  html:
+    code-tools: true
+    self-contained: false
+    code-fold: true
+    toc: true
+    toc-location: left
+    toc-depth: 5
+    toc-expand: 2
+    number-sections: true
+    fig-cap-location: top
+    code-links:
+      - text: scc-pi/traffic-collisions
+        icon: github
+        href: https://github.com/scc-pi/traffic-collisions
+execute:
+  warning: false
+  message: false
+---
+
+The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.  
+
+In 2024 there were 255 KSIs. 40% of these were children and young people, forty-five under 16s and fifty-nine 16-to-24-year-olds. Improving this is a priority (Council Plan priorities Children & Young People, and City on the Move).   
+
+Problem statement:  
+
+> “Given imperfect data and limited budgets, where should we intervene next to prevent severe harm?” 
+
+Proposal summary:  
+
+1. Historic collision frequency alone does not capture future risk.  
+1. Use additional publicly available data, including road network, traffic flow, and socio-economic indicators.  
+1. Severity‑weightings are a policy not a statistical decision.  
+1. Transparency and explainability prioritised over “black box” AI models.  
+1. Follow existing good practice e.g. TfL.  
+
+```{mermaid}
+%%| label: gap-analysis
+%%| fig-cap: "Figure 1: Gap Analysis - Current vs Future Road Safety Decision Journey"
+%%| echo: true
+%%| code-fold: hide
+
+flowchart TD
+
+    %% Current State
+    subgraph CS[<b>Current State</b>]
+        C1[Historic collision counts]
+        C2[Hotspot ranking]
+        C3[Officer judgement]
+        C4[Scheme selection]
+
+        C1 --> C2 --> C3 --> C4
+    end
+
+    %% Future State
+    subgraph FS[<b>Future State</b>]
+        F1[Integrated risk indicators]
+        F2[Predictive risk scoring]
+        F3[Officer judgement + evidence]
+        F4[Proactive intervention]
+
+        F1 --> F2 --> F3 --> F4
+    end
+
+    %% Alignment (optional visual linkage)
+    C1 -.-> F1
+    C2 -.-> F2
+    C3 -.-> F3
+    C4 -.-> F4
+```
+
+People:  
+
+- Laurie Platt (Data Scientist)  
+- Nicola Mchugh (Corporate Performance & Insight Manager)  
+- Tracy Hendry (Road Safety Manager)  
+- Ashley Carnall (Road Safety Auditor)
+
+Timeline (Laurie’s Multiverse coursework deadlines):  
+
+- Apr-May 2026 - Proposal ([Business transformation proposal](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc))  
+- July-Aug 2026 - Exploratory Data Analysis (Enhancing decision making with statistics)   
+- Oct-Nov 2026 - Risk model - PoC (Leveraging Machine Learning to improve efficiency)  
+- Jan-Feb 2027 - Risk model - Live (Capstone project)  
+
+Next Steps: 
+
+- Further research on best practice (e.g. TfL) and planning (as part of current Multiverse coursework).  
+- Meeting with Tracy, Ash, & Nicola – sponsorship, proposal sign off, ways of working etc.  
