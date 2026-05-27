@@ -95,41 +95,75 @@ The scope of the PoC Collision Risk Model is SR-01 Highway Design only i.e. loca
 
 ## Decision Process
 
-### AS-IS (spots) 
+### As-is spots 
 
 ```{mermaid}
 %%| label: gap-analysis
-%%| fig-cap: "Figure: AS-IS (spots) Decision Process"
+%%| fig-cap: "Figure: As-is (spots) decision process"
 %%| echo: true
 %%| code-fold: hide
 
 flowchart TD
 
-    Analysis1["STATS19<br/><b>hot-spot</b> analysis<br/>(<i>Officer</i>)"]
-    Analysis2["Investigation of individual<br/><b>spots & lengths</b><br/>(<i>Officer</i>)"]
-    Analysis3["Local Safety schemes<br/><b>criteria</b><br/>(<i>Members</i>)"] 
+    Analysis1["STATS19 on AccsMap<br/><b>hot-spot</b> analysis<br/>(<i>Officer</i>)"]
+    Analysis2["Investigation of individual<br/><b>spots</b><br/>(<i>Officer</i>)"]
+    Analysis3["Local Safety schemes<br/><b>scoring</b><br/>(<i>Officer</i>)"] 
+    Criteria1["Local Safety schemes<br/><b>criteria</b><br/>(<i>Members</i>)"] 
     List1["Local Safety schemes<br/><b>draft priority list</b><br/>(<i>Officer</i>)"]
     List2["Local Safety schemes<br/><b>recommended priority list</b><br/>(<i>Manager</i>)"]
     List3["Local Safety schemes<br/><b>agreed priority list</b><br/>(<i>Members</i>)"]
-    Programme1["Local Safety schemes<br/><b>programme</b><br/>(<i>Officer</i>)"]
+    Programme1["Road Safety Fund<br/><b>Programme</b><br/>(<i>Officer</i>)"]
     
+    Criteria1 --> Analysis3
     Analysis1 --> List1
     Analysis2 --> List1
     Analysis3 --> List1
     List1 --> List2 --> List3 --> Programme1
 ```
 
-### EMERGING-AS-IS (lengths)  
+### As-is lengths    
 
+```{mermaid}
+%%| label: gap-analysis
+%%| fig-cap: "Figure: As-is (lengths) decision process"
+%%| echo: true
+%%| code-fold: hide
 
-### TO-BE (lengths) 
+flowchart TD
+
+    AnalysisAccsmap["STATS19 on AccsMap<br/><b>eyeball</b> analysis<br/>(<i>Officer</i>)"]
+    AnalysisExcel["In depth analysis<br/>of 42 lengths<br/><b>Excel</b><br/>(<i>Officer</i>)"] 
+    Narrative["<b>Collision Risk Narrative</b><br/>for 5 projects<br/>(<i>Officer</i>)"]
+    Mandate["<b>Project Mandate</b><br/>for 5 projects<br/>(<i>Manager</i>)"]
+
+    ListInvestigation["Lengths (approx. 1km)<br/>of all A, B, & C roads<br/><b>Investigation List</b> of ??<br/>(<i>Officer</i>)"]:::yellow  
+    ListPriorities["Local Safety schemes<br/><b>Draft Priority List</b> of 42<br/>(<i>Officer</i>)"]:::yellow
+    ListProjectsDraft["Local Safety schemes<br/><b>Recommended Project List</b> of 5<br/>(<i>Manager</i>)"]:::yellow
+    ListProjectsAgreed["Local Safety schemes<br/><b>Agreed Project List</b> of 5 <br/>(<i>Members</i>)"]:::yellow
+    ListProgramme["Road Safety Fund<br/><b>Programme List</b> of 5<br/>(<i>Manager</i>)"]:::yellow
+    
+    AnalysisAccsmap --> ListInvestigation
+    ListInvestigation --> ListPriorities
+    ListPriorities --> ListProjectsDraft
+    ListPriorities --> AnalysisExcel 
+    AnalysisExcel --> ListProjectsDraft
+    AnalysisExcel --> Narrative
+    AnalysisExcel --> Mandate
+    Narrative --> Mandate
+    ListProjectsDraft --> ListProjectsAgreed
+    Mandate --> ListProjectsAgreed
+    ListProjectsAgreed --> ListProgramme
+
+    classDef yellow fill:#FFF2CC
+```
+
+### To-be lengths
 
 ## Data Analysis Process
 
-### AS-IS (lengths)  
+### As-is lengths  
 
-
-### TO-BE (lengths) 
+### To-be lengths 
 
 
 
