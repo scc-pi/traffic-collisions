@@ -23,7 +23,21 @@ execute:
   message: false
 ---
 
-The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.  
+:::: {.columns}
+
+::: {.column width="20%"}
+![](resources/road-safety.jpg){width=100}
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="70%"}
+The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.   
+:::
+
+::::
 
 In 2024 there were 255 KSIs. 40% of these were children and young people, forty-five under 16s and fifty-nine 16-to-24-year-olds. Reducing these numbers is a priority (Council Plan priorities Children & Young People, and City on the Move).   
 
@@ -84,7 +98,7 @@ People:
 Timeline (Laurie’s Multiverse coursework deadlines):  
 
 - June 2026 - Proposal ([Business transformation proposal](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc))  
-- Feb 2027 - Risk model - Live (Capstone project)  
+- Feb 2027 - PoC Risk model (Capstone project)  
 
 Next Steps: 
 
