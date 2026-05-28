@@ -18,30 +18,30 @@ format:
       - text: scc-pi/traffic-collisions
         icon: github
         href: https://github.com/scc-pi/traffic-collisions
+    css: styles.css
+    # include-in-header:
+    #   - text: "<style>
+    #         /* Optional: remove fill completely (transparent) */
+    #         .mermaid .cluster rect {
+    #           fill: transparent !important;
+    #         }
+    #         </style>"
 execute:
   warning: false
   message: false
 ---
 
-:::: {.columns}
+:::{style="display: flex; align-items: center; gap: 1rem;"}
 
-::: {.column width="10%"}
-![](resources/road-safety.jpg){width=150px}
-:::
+![](resources/road-safety.jpg){width=180px}
 
-::: {.column width="5%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="80%"}
 Aims to improve how we assess traffic collision risk.
-:::
 
-::::
+:::
 
 The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.   
 
-In 2024 there were 255 KSIs. 40% of these were children and young people, forty-five under 16s and fifty-nine 16-to-24-year-olds. Reducing these numbers is a priority (Council Plan priorities Children & Young People, and City on the Move).   
+In 2024 there were 255 KSIs in Sheffield. 40% of these were children and young people, forty-five under 16s and fifty-nine 16-to-24-year-olds. Reducing these numbers is a priority (Council Plan priorities Children & Young People, and City on the Move).   
 
 Problem statement:  
 
@@ -55,9 +55,10 @@ Proposal summary:
 1. Transparency and explainability prioritised over “black box” AI models.  
 1. Follow existing good practice e.g. TfL.  
 
+
 ```{mermaid}
-%%| label: gap-analysis
-%%| fig-cap: "Figure 1: Gap Analysis - Current vs Future Road Safety Decision Journey"
+%%| label: fig-gap-analysis
+%%| fig-cap: "Gap Analysis - Current vs Future Road Safety Decision Journey"
 %%| echo: true
 %%| code-fold: hide
 
@@ -99,12 +100,12 @@ People:
 
 Timeline (Laurie’s Multiverse coursework deadlines):  
 
-- June 2026 - Proposal ([Business transformation proposal](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc))  
-- Feb 2027 - PoC Risk model (Capstone project)  
+- June 2026 - proposal ([Business transformation proposal](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc))  
+- Feb 2027 - PoC risk model (Capstone project)  
 
 Next Steps: 
 
 - Further research on best practice (e.g. TfL) and planning (as part of current Multiverse coursework).  
-- Meeting with Tracy, Ash, & Nicola – sponsorship, proposal sign off, ways of working etc.  
+- Meet with Tracy, Ash, & Nicola – sponsorship, proposal sign off, ways of working etc.  
 
 Detailed [project plan](https://github.com/orgs/scc-pi/projects/7/views/1).

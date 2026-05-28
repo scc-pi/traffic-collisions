@@ -1,0 +1,6 @@
+/* Optional: remove fill completely (transparent) */
+div.mermaid svg .node rect {
+  fill: transparent !important;
+  stroke: none !important;
+}
+

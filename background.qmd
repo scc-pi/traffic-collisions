@@ -11,7 +11,7 @@ format:
     code-fold: true
     toc: true
     toc-depth: 5
-    toc-expand: 2
+    toc-expand: 1
     number-sections: true
     fig-cap-location: top
     code-links:
@@ -25,7 +25,7 @@ execute:
 
 ## People  
 
-Laurie Platt, Data Scientist, is in the final year of an [Advanced Data Fellowship Multiverse course](https://www.multiverse.io/employers/programmes/advanced-data-fellowship). For his current [Business Transformation Proposal module](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc) (deadline 10/06/26) he's proposing a Traffic Collision Risk Model that could be undertaken for his Capstone Project (deadline Feb '27).  
+Laurie Platt, Data Scientist, is in the final year of an [Advanced Data Fellowship Multiverse course](https://www.multiverse.io/employers/programmes/advanced-data-fellowship). For his current [Business Transformation Proposal module](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Multiverse/Module05-ProjectMgt/ADF_M5_Project_LauriePlatt.docx?d=w30acc46970554540b358c73b32d59556&csf=1&web=1&e=ma6JQc) (deadline 10/06/26) he's proposing a Traffic Collision Risk Model that could be undertaken for his Capstone project (deadline Feb '27).  
 
 Nicola Mchugh, the Performance & Insight Manager, is Laurie's line manager and has been involved in early discussions about the project.   
 
@@ -42,10 +42,11 @@ Ben King, the Strategic Transport Manager, is Tracy and Ian's line manager, and 
 People mentioned are highlighted in the diagram below, which illustrates where they sit in the Council structure.  
 
 ```{mermaid}
-%%| label: people
-%%| fig-cap: "Figure: People & Services"
+%%| label: fig-people
+%%| fig-cap: "People & Services"
 %%| echo: true
 %%| code-fold: hide
+%%| column: page-right
 
 flowchart TD
 
@@ -53,7 +54,7 @@ flowchart TD
     Top2[Kate Martin<br/>City Futures - Exec Director]
     Top3[Parveen Akhtar<br/>Chief Operating Officer]
     
-    Transport1["William Stewart<br/>Investment, Climate Change, & Planning - Director"]
+    Transport1["William Stewart<br/>Investment, Climate Change,<br/>& Planning - Director"]
     Transport2["Jefferson Nwokeoma<br/>Transport - Assistant Director"]
 
     Safety1["Ben King<br/>Strategic Transport - Manager"]:::yellow
@@ -61,11 +62,11 @@ flowchart TD
     Safety3["Ian Woodhouse<br/>Transport Planner"]:::yellow 
     Projects1["Andrew Butler<br/>Transport Projects - Manager"]
     Projects2["Ashley Carnall<br/>Road Safety Auditor"]:::yellow 
-    Programmes1["Richard Whiteley<br/>Transport Programmes - Manager"]:::yellow 
+    Programmes1["Richard Whiteley<br/>Transport Programmes<br>- Manager"]:::yellow 
 
-    Data1["Jonathon Clifton<br/>Strategy, Performance, & Communications - Director"]
+    Data1["Jonathon Clifton<br/>Strategy, Performance,<br/>& Communications - Director"]
     Data2["James Ford<br/>Chief Data Officer"]
-    Data3["Nicola Mchugh<br/>Corporate Performance & Insight - Manager"]:::yellow
+    Data3["Nicola Mchugh<br/>Corporate Performance<br/>& Insight - Manager"]:::yellow
     Data4["Laurie Platt<br/>Data Scientist"]:::yellow 
     
     Top1 --> Top2
@@ -89,7 +90,7 @@ The Collision Risk Model project is initially a PoC (Proof of Concept) only. The
 
 The [emerging Road Safety Strategy](https://sccextranet.sharepoint.com/:w:/r/sites/DataScience/Shared%20Documents/Public/RoadSafety/Background/260323_Road%20Safety%20Strategy_V10.docx?d=we5c48ad9520d4953b354c53ef6700de9&csf=1&web=1&e=jiniSw) provides the summary below of Road Safety interventions and policies.  
 
-![Summary of Interventions & Policies](resources/road-safety-interventions.png){#fig-interventions .lightbox}
+![Summary of Interventions & Policies](resources/road-safety-interventions.png){#fig-interventions .lightbox width=80% fig-align="left"}
 
 The scope of the PoC Collision Risk Model is SR-01 Highway Design only i.e. local Road Safety engineering schemes. It is arguable that a Collision Risk Model could inform, to a great or lesser extent, all of the listed interventions, and this is something that could be reviewed after the PoC.  
 
@@ -97,9 +98,11 @@ The scope of the PoC Collision Risk Model is SR-01 Highway Design only i.e. loca
 
 ### As-is spots 
 
+::: {style="width: 70%;"}
+
 ```{mermaid}
-%%| label: gap-analysis
-%%| fig-cap: "Figure: As-is (spots) decision process"
+%%| label: fig-as-is-spots
+%%| fig-cap: "As-is (spots) decision process"
 %%| echo: true
 %%| code-fold: hide
 
@@ -121,11 +124,15 @@ flowchart TD
     List1 --> List2 --> List3 --> Programme1
 ```
 
+:::
+
 ### As-is lengths    
 
+::: {style="width: 50%;"}
+
 ```{mermaid}
-%%| label: gap-analysis
-%%| fig-cap: "Figure: As-is (lengths) decision process"
+%%| label: fig-as-is-lengths
+%%| fig-cap: "As-is (lengths) decision process"
 %%| echo: true
 %%| code-fold: hide
 
@@ -156,6 +163,8 @@ flowchart TD
 
     classDef yellow fill:#FFF2CC
 ```
+
+:::
 
 ### To-be lengths
 
