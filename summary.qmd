@@ -1,5 +1,6 @@
 ---
 title: "Summary"
+subtitle: "Traffic Collision Risk"
 author: "Laurie Platt"
 date: last-modified
 date-format: "[Last updated ] DD MMMM, YYYY"
@@ -9,7 +10,6 @@ format:
     self-contained: false
     code-fold: true
     toc: true
-    toc-location: left
     toc-depth: 5
     toc-expand: 2
     number-sections: true
