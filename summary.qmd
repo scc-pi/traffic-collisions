@@ -1,5 +1,6 @@
 ---
-title: "Traffic collision risk summary"
+title: "Traffic collision risk"
+subtitle: "Summary"
 author: "Laurie Platt"
 date: last-modified
 date-format: "[Last updated ] DD MMMM, YYYY"
@@ -25,7 +26,7 @@ execute:
 :::: {.columns}
 
 ::: {.column width="10%"}
-![](resources/road-safety.jpg){width=100}
+![](resources/road-safety.jpg){width=150px}
 :::
 
 ::: {.column width="5%"}
@@ -33,7 +34,7 @@ execute:
 :::
 
 ::: {.column width="80%"}
-Improve how we assess traffic collision risk.
+Aims to improve how we assess traffic collision risk.
 :::
 
 ::::
