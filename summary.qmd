@@ -25,7 +25,7 @@ execute:
 
 :::: {.columns}
 
-::: {.column width="20%"}
+::: {.column width="10%"}
 ![](resources/road-safety.jpg){width=100}
 :::
 
@@ -33,11 +33,13 @@ execute:
 <!-- empty column to create gap -->
 :::
 
-::: {.column width="70%"}
-The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.   
+::: {.column width="80%"}
+Improve how we assess traffic collision risk.
 :::
 
 ::::
+
+The Council has statutory duties under the Road Traffic Act 1988 and broader public health responsibilities to improve road safety and reduce the number of Killed or Seriously Injured (KSI) traffic collisions.   
 
 In 2024 there were 255 KSIs. 40% of these were children and young people, forty-five under 16s and fifty-nine 16-to-24-year-olds. Reducing these numbers is a priority (Council Plan priorities Children & Young People, and City on the Move).   
 
